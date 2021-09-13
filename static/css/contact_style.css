@@ -1,0 +1,158 @@
+.navbar {
+    display: flex;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+
+    
+  }
+
+  .icon {
+    align-items: center;
+  }
+  .menu {
+    display: block;
+    box-sizing: border-box;
+    background: white;
+    height: 87.75px;
+    width: 87.75px;
+    padding: 36px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+    transition: 1.3s cubic-bezier(0.53, 0, 0.15, 1.3);
+    float:left;
+  }
+  .menu.expanded {
+    width: 50%;
+  }
+  
+  span {
+    padding: 9px;
+    white-space: nowrap;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
+    transform: rotateY(0deg);
+  }
+  span:nth-of-type(1) {
+    transition-delay: 0.4s;
+  }
+  span:nth-of-type(2) {
+    transition-delay: 0.5s;
+  }
+  span:nth-of-type(3) {
+    transition-delay: 0.6s;
+  }
+  span:nth-of-type(4) {
+    transition-delay: 0.7s;
+  }
+  span.hidden {
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  span.hidden:nth-of-type(1) {
+    transition-delay: 0.3s;
+  }
+  span.hidden:nth-of-type(2) {
+    transition-delay: 0.2s;
+  }
+  span.hidden:nth-of-type(3) {
+    transition-delay: 0.1s;
+  }
+  span.hidden:nth-of-type(4) {
+    transition-delay: 0s;
+  }
+  span a {
+    color: black;
+    text-decoration: none;
+    font-size: 16.3636363636px;
+    transition: 0.3s;
+  }
+  
+  .container {
+    position: absolute;
+    top: 22.5px;
+    right: calc( 100% - 73.125px );
+    height: 42.75px;
+    width: 58.5px;
+    transition: 1s;
+    float: right;
+  }
+  .container.close {
+    right: 0;
+  }
+  
+  .toggle {
+    position: relative;
+    height: 42.75px;
+    width: 58.5px;
+    cursor: pointer;
+  }
+  .toggle:after, .toggle:before {
+    content: "";
+    background: #1d90f5;
+    width: 36px;
+    height: 4.5px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: 1.3s cubic-bezier(0.53, 0, 0.15, 1.3);
+  }
+  .toggle:before {
+    top: -30%;
+  }
+  .toggle:after {
+    top: 30%;
+  }
+  .toggle.close:before {
+    transform: rotate(-225deg);
+    top: 0;
+  }
+  .toggle.close:after {
+    transform: rotate(225deg);
+    top: 0;
+  }
+
+  #contactus{
+      text-align: center;
+      font-size: 3rem;
+  }
+
+  #contact{
+      display: flex;
+      flex-direction: row;
+  }
+
+  #twitter{
+    border: solid 2px black;
+    padding: 15px;
+    width: 40%;
+    height: auto;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 10px; /* 角を丸くする */
+  }
+
+  #twitter img{
+    width: 10%;
+    margin-right: 45%;
+    margin-left: 45%; 
+  }
+
+  #mail{
+    border: solid 2px black;
+    padding: 15px;
+    width: 40%;
+    height: auto;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 10px; /* 角を丸くする */
+  }
