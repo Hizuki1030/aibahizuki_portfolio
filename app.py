@@ -21,6 +21,11 @@ def startMenu():
     name = "Hoge"
     return render_template('index.html', title='flask test', name=name) #変更
 
+@app.route('/works-template')
+def startMenu():
+    name = "Hoge"
+    return render_template('works-template.html', title='flask test', name=name) #変更
+
 
 ## おまじない
 if __name__ == "__main__":
