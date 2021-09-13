@@ -17,12 +17,12 @@ def dated_url_for(endpoint, **values):
 
 
 @app.route('/')
-def startMenu():
+def main():
     name = "Hoge"
     return render_template('index.html', title='flask test', name=name) #変更
 
 @app.route('/works-template')
-def startMenu():
+def work0():
     name = "Hoge"
     return render_template('works-template.html', title='flask test', name=name) #変更
 
