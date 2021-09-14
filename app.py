@@ -1,4 +1,4 @@
-from flask import Flask, render_template,url_for,send_from_directory,redirect#追加
+from flask import Flask, render_template,url_for,send_from_directory #追加
 import os
 app = Flask(__name__)
 
@@ -23,7 +23,8 @@ def main():
 
 @app.route('/favicon.ico')
 def favicon():
-    return redirect(url_for('static', filename='favicon.ico'), code=302)
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 ## おまじない
 if __name__ == "__main__":
