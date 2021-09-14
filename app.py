@@ -1,4 +1,4 @@
-from flask import Flask, render_template,url_for,send_from_directory#追加
+from flask import Flask, render_template,url_for,send_from_directory,redirect#追加
 import os
 app = Flask(__name__)
 
