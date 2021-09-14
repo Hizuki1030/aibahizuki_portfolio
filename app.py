@@ -23,7 +23,7 @@ def main():
 
 @app.route('/favicon.ico')
 def favicon():
-    return send_from_directory(os.path.join("https://drive.google.com/uc?id=1GZ5YBmCgr80vqt587crofZY7c6Nrdyi7")) 
+    return send_from_directory("https://drive.google.com/uc?id=1GZ5YBmCgr80vqt587crofZY7c6Nrdyi7") 
 
 ## おまじない
 if __name__ == "__main__":
