@@ -23,7 +23,8 @@ def main():
 
 @app.route('/favicon.ico')
 def favicon():
-    return app.send_static_file('favicon.ico')
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 ## おまじない
 if __name__ == "__main__":
