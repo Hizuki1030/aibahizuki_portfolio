@@ -23,7 +23,7 @@ def main():
 
 @app.route('/favicon.ico')
 def favicon():
-    return app.send_static_file("https://drive.google.com/uc?id=1T1pKpACOFyjjJfqf1457tTKbLEx5_Whd") 
+    return send_from_directory(os.path.join(app.root_path, 'static'),'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 ## おまじない
 if __name__ == "__main__":
