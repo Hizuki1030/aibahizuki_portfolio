@@ -21,6 +21,9 @@ def main():
     name = "Hoge"
     return render_template('index.html', title='flask test', name=name) #変更
 
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join("https://drive.google.com/uc?id=1GZ5YBmCgr80vqt587crofZY7c6Nrdyi7")) 
 
 ## おまじない
 if __name__ == "__main__":
