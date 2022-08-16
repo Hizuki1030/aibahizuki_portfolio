@@ -143,33 +143,49 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 85vh;
+  height: 100vh;
   text-align: center;
-  
+  background-image: url(https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/242009165_608704270298524_908874445216453230_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=zAjM-qkF6EUAX_qAkxc&_nc_ht=scontent-lax3-1.xx&oh=00_AT_vvwFTWUCRrJCqS09_6rP8iRMT2rTGBfuITFxYLO9veQ&oe=62FFE92E);
+  background-position: 50%  80%;
+    background-size: 100% auto;
 }
 
 .mv-container {
-  padding: 0 40px;
+  padding: 0 30px;
 }
 
 .mv-title {
+  margin-bottom: 5px;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 5px;
+
+}
+
+.mv-title span{
   font-size: 60px;
   font-weight: bold;
   line-height: 1.2;
-  margin-bottom: 5px;
   letter-spacing: .1em;
+  color: black;
+  margin: 10px;
 }
+
 .mv-subtitle {
   font-size: 20px;
-  font-weight: bold;
+
   line-height: 1;
   margin-bottom: 40px;
   letter-spacing: .08em;
+  color: white;
+
+
 }
 
 .mv-text {
   font-size: 16px;
   line-height: 1.8;
+  color: white;
+
 }
 
 /*--------------------------------
@@ -443,6 +459,13 @@ img {
   /*  メインビジュアル */
   .mv {
     height: 75vh;
+    background-image: url(https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/242009165_608704270298524_908874445216453230_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=zAjM-qkF6EUAX_qAkxc&_nc_ht=scontent-lax3-1.xx&oh=00_AT_vvwFTWUCRrJCqS09_6rP8iRMT2rTGBfuITFxYLO9veQ&oe=62FFE92E);
+    background-position: 50%  50%;
+    background-size: 100% auto;
+  }
+
+  .mv-background {
+    width:100%;
   }
 
   .mv-container {
@@ -450,16 +473,204 @@ img {
   }
 
   .mv-title {
-    font-size: 30px;
+    font-size: 20px;
+    color:white;
+    text-shadow:none;
+
   }
   .mv-subtitle {
     font-size: 16px;
     margin-bottom: 20px;
+    color:white;
+
   }
 
   .mv-text {
     font-size: 14px;
     line-height: 1.7;
+    color:white;
+  }
+
+  /* Works */
+  .works-name {
+    font-size: 12px;
+  }
+
+  .works-info {
+    margin-top: 3px;
+  }
+
+  .works-list {
+    justify-content: space-between;
+  }
+
+  .works-item {
+    flex: 0 0 48%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  /* Skill */
+  .skill-list {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .skill-item {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .skill-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .skill-name {
+    margin-bottom: 5px;
+  }
+
+  .skill-text {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  /* About */
+  .profile {
+    display: block;
+  }
+  .profile-img {
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .profile-body p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .profile-body p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  /* フッター */
+  .footer {
+    padding: 20px;
+  }
+
+  /* 下層ページ */
+  .article {
+    padding: 50px 0;
+  }
+
+  .article-body h3 {
+    font-size: 16px;
+    padding-left: .8em;
+  }
+
+  .article-body h3:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  .article-body p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 14px;
+  }
+
+  .pc-only {
+    display: none;
+  }
+
+  .sp-only {
+    display: block;
+  }
+
+  /* 見出し */
+  .title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .lead {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  /* レイアウト */
+  .wrapper {
+    padding-top: 57px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  /* ヘッダー */
+  .header .container {
+    padding: 15px;
+  }
+
+  .header-logo {
+    font-size: 15px;
+    margin-right: 15px;
+  }
+
+  .gnav-item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .gnav-item a {
+    font-size: 10px;
+  }
+
+  .gnav-item a:after {
+    display: none;
+  }
+
+  /*  メインビジュアル */
+  .mv {
+    height: 75vh;
+    background-image: url(https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/242009165_608704270298524_908874445216453230_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=zAjM-qkF6EUAX_qAkxc&_nc_ht=scontent-lax3-1.xx&oh=00_AT_vvwFTWUCRrJCqS09_6rP8iRMT2rTGBfuITFxYLO9veQ&oe=62FFE92E);
+    background-position: 50%  50%;
+    background-size: 45% auto;
+    background-color: white;
+  }
+
+
+  .mv-container {
+    padding: 0 20px;
+  }
+
+  .mv-title {
+    font-size: 50px;
+    color:white;
+    text-shadow:none;
+
+
+  }
+  .mv-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color:white;
+  }
+
+  .mv-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color:white;
   }
 
   /* Works */
