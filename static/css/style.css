@@ -162,7 +162,7 @@ img {
 }
 
 .mv-title span{
-  font-size: 60px;
+  font-size: 70px;
   font-weight: bold;
   line-height: 1.2;
   letter-spacing: .1em;
@@ -176,7 +176,7 @@ img {
   line-height: 1;
   margin-bottom: 40px;
   letter-spacing: .08em;
-  color: white;
+  color: black;
 
 
 }
@@ -214,7 +214,15 @@ img {
 
 .works-img img {
   border: 1px solid #e6e6e6;
+  width: 100%;
 }
+
+
+.works-img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 
 .works-name {
   font-size: 12px;
@@ -415,6 +423,17 @@ img {
     margin-bottom: 20px;
   }
 
+  .aboutme-img img{
+    border-radius: 50%;
+  }
+
+  .aboutme-img{
+    margin-bottom: 30px;
+    width: 50%;
+    margin-right: auto;
+    margin-left:  auto;
+  }
+
   .lead {
     font-size: 14px;
     line-height: 1.7;
@@ -458,10 +477,10 @@ img {
 
   /*  メインビジュアル */
   .mv {
-    height: 75vh;
-    background-image: url(https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/242009165_608704270298524_908874445216453230_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=zAjM-qkF6EUAX_qAkxc&_nc_ht=scontent-lax3-1.xx&oh=00_AT_vvwFTWUCRrJCqS09_6rP8iRMT2rTGBfuITFxYLO9veQ&oe=62FFE92E);
+    background-image: url("../img/sakura.JPG");
     background-position: 50%  50%;
     background-size: 100% auto;
+    height: auto;
   }
 
   .mv-background {
@@ -469,7 +488,9 @@ img {
   }
 
   .mv-container {
-    padding: 0 20px;
+    margin-top:10%;
+    margin-bottom: 10%;
+
   }
 
   .mv-title {
@@ -481,9 +502,11 @@ img {
   .mv-subtitle {
     font-size: 16px;
     margin-bottom: 20px;
-    color:white;
+    color:black;
+    font-weight: bold;
 
   }
+
 
   .mv-text {
     font-size: 14px;
@@ -493,7 +516,8 @@ img {
 
   /* Works */
   .works-name {
-    font-size: 12px;
+    font-size: 18px;
+    text-align: center;
   }
 
   .works-info {
@@ -643,10 +667,7 @@ img {
   /*  メインビジュアル */
   .mv {
     height: 75vh;
-    background-image: url(https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/242009165_608704270298524_908874445216453230_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=zAjM-qkF6EUAX_qAkxc&_nc_ht=scontent-lax3-1.xx&oh=00_AT_vvwFTWUCRrJCqS09_6rP8iRMT2rTGBfuITFxYLO9veQ&oe=62FFE92E);
-    background-position: 50%  50%;
-    background-size: 45% auto;
-    background-color: white;
+    background-image: url("../img/sakura.JPG");
   }
 
 
@@ -662,9 +683,10 @@ img {
 
   }
   .mv-subtitle {
-    font-size: 16px;
+    font-size: 24px;
     margin-bottom: 20px;
-    color:white;
+    color:black;
+    font-weight: bold;
   }
 
   .mv-text {
@@ -675,7 +697,7 @@ img {
 
   /* Works */
   .works-name {
-    font-size: 12px;
+    font-size: 24px;
   }
 
   .works-info {
