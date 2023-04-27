@@ -143,11 +143,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   text-align: center;
-  background-image: url(https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/242009165_608704270298524_908874445216453230_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=zAjM-qkF6EUAX_qAkxc&_nc_ht=scontent-lax3-1.xx&oh=00_AT_vvwFTWUCRrJCqS09_6rP8iRMT2rTGBfuITFxYLO9veQ&oe=62FFE92E);
-  background-position: 50%  80%;
-    background-size: 100% auto;
+  background-image: url("../img/sakura.JPG");
+  background-position: 50%  50%;
+  background-size: 100% auto;
+  height: 60vh;
 }
 
 .mv-container {
@@ -177,6 +177,7 @@ img {
   margin-bottom: 40px;
   letter-spacing: .08em;
   color: black;
+  font-weight: bold;
 
 
 }
@@ -716,12 +717,14 @@ img {
 
   /* Skill */
   .skill-list {
-    display: block;
-    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -50px;
   }
 
   .skill-item {
-    width: 100%;
+    width: 48%;
     margin-bottom: 35px;
   }
 
@@ -740,15 +743,17 @@ img {
 
   /* About */
   .profile {
-    display: block;
+    display: flex;
   }
+
   .profile-img {
     width: 150px;
-    margin: 0 auto;
     margin-bottom: 25px;
   }
 
   .profile-body p {
+    margin-top: 10px;
+    margin-bottom: auto;
     font-size: 14px;
     line-height: 1.7;
   }
