@@ -26,6 +26,12 @@ def main():
     name = "Hoge"
     return render_template('index.html', title='flask test', name=name) #変更
 
+@app.route('/work-ev.html')
+def ev():
+    name = "Hoge2"
+    return render_template('work-ev.html', title='flask test', name=name) #変更
+
+
 
 
 ## おまじない
